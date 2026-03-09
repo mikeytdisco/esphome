@@ -10,6 +10,7 @@ namespace one_wire {
 class OneWireBus {
  public:
   /// Send reset pulse.  This is required prior to all ROM commands
+  /// Returns true if a device presence pulse is detected.
   bool reset();
 
   /// Write a word to the bus. LSB first.
